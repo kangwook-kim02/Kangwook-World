@@ -29,4 +29,10 @@
 
 > 추후 스크린샷 추가 예정
 
-<img src="assets/homepageFrame.png" >
+### 설게
+
+> <img src="./assets/homepageDesign.png" alt="Kangwook World 홈페이지 설계" >
+
+### 구현
+
+> <img src="./assets/homepageFrame.png" alt="Kangwook World 홈페이지 프레임 미리보기" >

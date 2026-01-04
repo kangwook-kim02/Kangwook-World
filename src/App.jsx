@@ -10,8 +10,7 @@ function App() {
     <div className='homepage'>
       <SideBar />
       <Main />
-
-    </ div>
+    </div>
   )
 }
 
