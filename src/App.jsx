@@ -1,12 +1,16 @@
 import './App.css'
+import SideBar from './components/SideBar';
+import Main from './components/Main';
+
 
 function App() {
 
 
   return (
-    <>
-      kangwook-world
-    </>
+    <div className='homepage'>
+      <SideBar />
+      <Main />
+    </div>
   )
 }
 
