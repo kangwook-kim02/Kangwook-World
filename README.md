@@ -29,7 +29,7 @@
 
 > 추후 스크린샷 추가 예정
 
-### 설게
+### 설계
 
 > <img src="./assets/homepageDesign.png" alt="Kangwook World 홈페이지 설계" >
 
