@@ -1,0 +1,172 @@
+/* .Main {
+    width: 1000px;
+    background: rgba(255,255,255,0.4); 
+    border-radius: 16px;
+    padding: 14px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Header {
+    width: 260px;
+    height: 60px;
+    line-height: 49px;
+    margin: 0 auto;
+
+    background-color: white;
+    border-radius: 10px;
+    
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+
+    font-size: 1.5em;
+}
+
+.MainOutline {
+    width:1000px;
+    height:550px;
+    margin: 10px auto 0;
+
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.12);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.MainImageBox {
+  width: 950px;
+  height: 520px;
+  margin: 0 auto;
+  margin-top:15px;
+  background-color: #D9D9D9;
+
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+}
+
+.MainImageBox img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+} */
+
+
+/*ChatGPT를 통한 다듬은 버전*/
+.Main {
+  width: 1000px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px; 
+}
+
+
+.Main > .Header {
+  width: 260px;
+  height: 60px;
+
+  background: #fff;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5em;
+  font-weight: 700;
+
+  line-height: normal;
+  margin: 0; 
+}
+
+.MainOutline {
+  position: relative;
+  width: 100%;
+  height: 550px;
+
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+
+  padding: 15px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+}
+
+.MainImageBox {
+  width: 950px;
+  height: 520px;
+
+  background: #d9d9d9;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+}
+
+.MainImageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.NavBar {
+  position: absolute;
+  top: 0px;
+  right: -90px; /* -92px → 조금 덜 튀어나오게 (취향) */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.NavBar button {
+  all: unset;
+  width: 92px;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+
+  background: #2f6fdc;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+
+  border-radius: 0 10px 10px 0;
+
+  border-left: 3px solid rgba(255,255,255,0.35);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+
+  position: relative; 
+}
+
+.NavBar button:hover {
+  transform: translateX(2px);
+}
+
+.NavBar button.active::before {
+  content: "●";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  color: #ffffff;
+  opacity: 0.9;
+}

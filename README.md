@@ -1,1 +1,32 @@
-## Mini-homepage style portfolio built with React
+# 🌎 Kangwook World
+
+> 개인 포트폴리오 & 미니홈피 스타일 웹 프로젝트  
+> Y2K 싸이월드 감성을 모방한 프론트엔드 웹앱
+
+---
+
+## 💻 UI 구성
+
+| 탭      | 설명                                  |
+| ------- | ------------------------------------- |
+| Home    | 개인 홈 및 월드 메인 화면             |
+| Profile | 자기 소개 및 경력                     |
+| Project | 진행 중인 프로젝트 및 완료된 프로젝트 |
+
+---
+
+## 추후 추가 예정
+
+- Home, profile, Project 외 추가 월드
+- 방명록 기능
+- 관리자 권한으로 로그인 및 게시글 CRUD 기능
+- 프로필 음악 기능
+- Today 방문 횟수 / Total 방문자 카운트
+
+---
+
+## 🖼 UI 미리보기
+
+> 추후 스크린샷 추가 예정
+
+<img src="assets/homepageFrame.png" >
