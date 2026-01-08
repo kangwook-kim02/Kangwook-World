@@ -18,9 +18,10 @@ const SideBar = () => {
                     안녕하세요. 개발자 김강욱입니다.
                     깊이 있는 학습을 기반으로 성장하는 개발자가 되겠습니다.
                 </div>
+
                 <div className="Divider"></div>
 
-                <h4 className="SkillTitle">기술(Skill)</h4>
+                <h4 className="SkillTitle">⚙️ Skills</h4>
                 <div className="SkillList">
                     <div className="Skill">
                         <CppIcon className="CplusplusIcon" /> <span className="CplusplusText">C++</span>
@@ -35,11 +36,13 @@ const SideBar = () => {
                         <ReactIcon className="ReactIcon" /> <span className="ReactText">React</span>
                     </div>
                 </div>
+
                 <div className="Divider"></div>
-                <div className="Contact">
-                    <div>이름: 김강욱</div>
-                    <div>학력: 인하대학교 컴퓨터공학과</div>
-                    <div>메일: ices17@inha.edu</div>
+
+                <div className="Info">
+                    <div>👤 김강욱</div>
+                    <div>🎓 인하대학교 컴퓨터공학과</div>
+                    <div>✉️ ices17@inha.edu</div>
                 </div>
 
             </div>
