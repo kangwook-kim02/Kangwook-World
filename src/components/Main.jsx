@@ -12,16 +12,16 @@ const Main = () => {
     const [pageState, setPageState] = useState(0);
 
     const onClickButton = (e) => {
-        setPageState(e.target.value);
+        setPageState(Number(e.target.value));
     }
 
-    if (pageState == 0) {
+    if (pageState === 0) {
         return <Home onClickButton={onClickButton} />;
     }
-    else if (pageState == 1) {
+    else if (pageState === 1) {
         return <Profile onClickButton={onClickButton} />;
     }
-    else if (pageState == 2) {
+    else if (pageState === 2) {
         return <Project onClickButton={onClickButton} />;
     }
 
