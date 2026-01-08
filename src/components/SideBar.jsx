@@ -35,6 +35,12 @@ const SideBar = () => {
                         <ReactIcon className="ReactIcon" /> <span className="ReactText">React</span>
                     </div>
                 </div>
+                <div className="Divider"></div>
+                <div className="Contact">
+                    <div>이름: 김강욱</div>
+                    <div>학력: 인하대학교 컴퓨터공학과</div>
+                    <div>메일: ices17@inha.edu</div>
+                </div>
 
             </div>
         </div>
