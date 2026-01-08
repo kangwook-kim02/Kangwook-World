@@ -50,7 +50,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px; 
+  gap: 10px; 
 
   padding-top: 15px;
   box-sizing: border-box;
@@ -84,4 +84,63 @@
   background: #000;
   margin: 0; 
   opacity: 0.85;
+}
+
+.Introduce {
+  padding: 0px 20px;
+}
+
+.SkillTitle {
+  margin : 0;
+}
+
+.SkillList {
+  display: flex;
+  flex-wrap: wrap;  
+  gap: 5px;
+  justify-content: center;
+
+}
+
+.Skill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 6px 10px;
+  border-radius: 999px;
+
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.10);
+
+  
+  font-size: 14px;
+  font-weight: 700;
+  color: #222;
+
+  white-space: nowrap; 
+}
+
+.CplusplusIcon {
+  width: 20px;
+  height: 20px;
+  fill: #00599C;
+}
+
+.PythonIcon {
+  width: 20px;
+  height: 20px;
+  fill:#3776AB;
+}
+
+.JavaScriptIcon {
+    width: 20px;
+  height: 20px;
+  fill:#F7DF1E;
+}
+
+.ReactIcon {
+    width: 20px;
+  height: 20px;
+  fill:#61DAFB;
 }
