@@ -1,20 +1,30 @@
 import "./Main.css"
-
+import Home from "./world/Home";
+import Profile from "./world/Profile";
+import Project from "./world/Project";
+import { useState } from "react";
 
 const Main = () => {
-    return <div className="Main">
-        <h2 className="Header">강욱 월드</h2>
-        <div className="MainOutline">
-            <div className="MainImageBox">
-                <img src="" alt="" />
-            </div>
-            <div className="NavBar">
-                <button className="active">Home</button>
-                <button>Profile</button>
-                <button>Project</button>
-            </div>
-        </div>
-    </div>
+
+
+    // pageState
+    // 0: Home, 1: Profile, 2: Project 
+    const [pageState, setPageState] = useState(0);
+
+    const onClickButton = (e) => {
+        setPageState(e.target.value);
+    }
+
+    if (pageState == 0) {
+        return <Home onClickButton={onClickButton} />;
+    }
+    else if (pageState == 1) {
+        return <Profile onClickButton={onClickButton} />;
+    }
+    else if (pageState == 2) {
+        return <Project onClickButton={onClickButton} />;
+    }
+
 }
 
 export default Main;

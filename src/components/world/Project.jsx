@@ -1,0 +1,20 @@
+import "./Project.css"
+
+
+const Project = ({ onClickButton }) => {
+    return <div className="Project">
+        <h2 className="Header">강욱 월드</h2>
+        <div className="ProjectOutline">
+            <div>
+                <h1>Project</h1>
+            </div>
+            <div className="NavBar">
+                <button value={0} onClick={onClickButton}>Home</button>
+                <button value={1} onClick={onClickButton}>Profile</button>
+                <button className="active" value={2}>Project</button>
+            </div>
+        </div>
+    </div>
+}
+
+export default Project;
