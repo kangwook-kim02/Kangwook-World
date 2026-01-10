@@ -160,3 +160,8 @@
    line-height: 1.6;
   color: #555;
 }
+
+.University a, .Name a, .Email a {
+  text-decoration-line: none;
+  color: #555;
+}

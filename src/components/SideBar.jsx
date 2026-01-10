@@ -40,9 +40,9 @@ const SideBar = () => {
                 <div className="Divider"></div>
 
                 <div className="Info">
-                    <div>👤 김강욱</div>
-                    <div>🎓 인하대학교 컴퓨터공학과</div>
-                    <div>✉️ ices17@inha.edu</div>
+                    <div className="Name"><a href="https://github.com/kangwook-kim02" target='_blank'>👤 김강욱</a></div>
+                    <div className="University"><a href="https://cse.inha.ac.kr/cse/index.do" target='_blank'>🎓 인하대학교 컴퓨터공학과</a></div>
+                    <div className="Email"><a href="https://mail.google.com/mail" target='_blank'>✉️ ices17@inha.edu</a></div>
                 </div>
 
             </div>
