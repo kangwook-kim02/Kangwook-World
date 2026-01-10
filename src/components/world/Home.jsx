@@ -28,7 +28,7 @@ const Home = ({ onClickButton }) => {
     }, []);
 
     const playMusic = (e) => {
-        if (e.target.value == "▶") {
+        if (e.target.value === "▶") {
             setPlaying("⏸")
             window.player.playVideo();
         }
@@ -39,6 +39,7 @@ const Home = ({ onClickButton }) => {
     }
 
     const restartMusic = () => {
+        if (!window.player) return;
         if (playing === "⏸") {
             window.player.seekTo(0, true);
             window.player.playVideo();
