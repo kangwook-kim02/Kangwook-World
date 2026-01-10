@@ -112,3 +112,42 @@
   color: #ffffff;
   opacity: 0.9;
 }
+
+.Music {
+  background: #d9d9d9;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.MusicName {
+  background-color: white;
+  border-radius: 10px;
+  height: 30px;
+  display: flex;
+  overflow: hidden; 
+}
+
+.MusicName span {
+  background-color: transparent;
+  outline: none;  
+  margin-left: 5px;
+}
+
+
+.Music button {
+  background-color: transparent;
+  border: 0;
+}
+
+.cd {
+  display: inline-block;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spinning {
+  animation: spin 1.5s linear infinite;
+}
