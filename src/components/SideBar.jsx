@@ -4,8 +4,55 @@ import CppIcon from "./icons/cplusplus.svg?react";
 import PythonIcon from "./icons/python.svg?react";
 import JavaScriptIcon from "./icons/javascript.svg?react";
 import ReactIcon from "./icons/react.svg?react";
+import { useState } from "react";
 
 const SideBar = () => {
+
+    const [cppText, setCppText] = useState("C++");
+    const [pythonText, setPythonText] = useState("Python");
+    const [jsText, setJsText] = useState("JavaScript");
+    const [reactText, setReactText] = useState("React");
+
+    // 기술(Skill) 안으로 마우스가 들어왔을 때 이벤트 처리 함수
+    const onMouseOverText = (e) => {
+        let skill = e.currentTarget.dataset.skill;
+        switch (skill) {
+            case "cpp":
+                setCppText("★★★★★");
+                return;
+            case "python":
+                setPythonText("★★★☆☆");
+                return;
+            case "javaScript":
+                setJsText("★★★★☆");
+                return;
+            case "react":
+                setReactText("★★★★☆");
+                return;
+            default:
+        }
+    }
+
+    // 기술(SKill) 밖으로 마우스가 나갔을 때 이벤트 처리 함수
+    const onMouseOutText = (e) => {
+        let skill = e.currentTarget.dataset.skill;
+        switch (skill) {
+            case "cpp":
+                setCppText("C++");
+                return;
+            case "python":
+                setPythonText("Python");
+                return;
+            case "javaScript":
+                setJsText("JavaScript");
+                return;
+            case "react":
+                setReactText("React");
+                return;
+            default:
+        }
+    }
+
     return <div className="SideBar">
         <h2 className="Header">김강욱님의 미니홈피</h2>
         <div className="ProfileOutline">
@@ -23,26 +70,26 @@ const SideBar = () => {
 
                 <h4 className="SkillTitle">⚙️ Skills</h4>
                 <div className="SkillList">
-                    <div className="Skill">
-                        <CppIcon className="CplusplusIcon" /> <span className="CplusplusText">C++</span>
+                    <div className="Skill" data-skill="cpp" onMouseOver={onMouseOverText} onMouseOut={onMouseOutText}>
+                        <CppIcon className="CplusplusIcon" /> <span className="CplusplusText">{cppText}</span>
                     </div>
-                    <div className="Skill">
-                        <PythonIcon className="PythonIcon" /> <span className="PythonText">Python</span>
+                    <div className="Skill" data-skill="python" onMouseOver={onMouseOverText} onMouseOut={onMouseOutText}>
+                        <PythonIcon className="PythonIcon" /> <span className="PythonText">{pythonText}</span>
                     </div>
-                    <div className="Skill">
-                        <JavaScriptIcon className="JavaScriptIcon" /> <span className="JavaScriptText">JavaScript</span>
+                    <div className="Skill" data-skill="javaScript" onMouseOver={onMouseOverText} onMouseOut={onMouseOutText}>
+                        <JavaScriptIcon className="JavaScriptIcon" /> <span className="JavaScriptText">{jsText}</span>
                     </div>
-                    <div className="Skill">
-                        <ReactIcon className="ReactIcon" /> <span className="ReactText">React</span>
+                    <div className="Skill" data-skill="react" onMouseOver={onMouseOverText} onMouseOut={onMouseOutText}>
+                        <ReactIcon className="ReactIcon" /> <span className="ReactText">{reactText}</span>
                     </div>
                 </div>
 
                 <div className="Divider"></div>
 
                 <div className="Info">
-                    <div>👤 김강욱</div>
-                    <div>🎓 인하대학교 컴퓨터공학과</div>
-                    <div>✉️ ices17@inha.edu</div>
+                    <div className="Name"><a href="https://github.com/kangwook-kim02" target='_blank' rel="noopener noreferrer">👤 김강욱</a></div>
+                    <div className="University"><a href="https://cse.inha.ac.kr/cse/index.do" target='_blank' rel="noopener noreferrer">🎓 인하대학교 컴퓨터공학과</a></div>
+                    <div className="Email"><a href="mailto:ices17@inha.edu" target='_blank' rel="noopener noreferrer">✉️ ices17@inha.edu</a></div>
                 </div>
 
             </div>
