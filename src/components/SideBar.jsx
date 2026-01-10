@@ -27,7 +27,7 @@ const SideBar = () => {
                         <CppIcon className="CplusplusIcon" /> <span className="CplusplusText">C++</span>
                     </div>
                     <div className="Skill">
-                        <PythonIcon className="PythonIcon" /> <span className="pythonText">Python</span>
+                        <PythonIcon className="PythonIcon" /> <span className="PythonText">Python</span>
                     </div>
                     <div className="Skill">
                         <JavaScriptIcon className="JavaScriptIcon" /> <span className="JavaScriptText">JavaScript</span>
