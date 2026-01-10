@@ -89,7 +89,7 @@ const SideBar = () => {
                 <div className="Info">
                     <div className="Name"><a href="https://github.com/kangwook-kim02" target='_blank' rel="noopener noreferrer">👤 김강욱</a></div>
                     <div className="University"><a href="https://cse.inha.ac.kr/cse/index.do" target='_blank' rel="noopener noreferrer">🎓 인하대학교 컴퓨터공학과</a></div>
-                    <div className="Email"><a href="https://mail.google.com/mail" target='_blank' rel="noopener noreferrer">✉️ ices17@inha.edu</a></div>
+                    <div className="Email"><a href="mailto:ices17@inha.edu" target='_blank' rel="noopener noreferrer">✉️ ices17@inha.edu</a></div>
                 </div>
 
             </div>
