@@ -63,8 +63,8 @@ const Home = ({ onClickButton }) => {
                 <button onClick={playMusic} value={playing}>{playing}</button>
                 <button onClick={restartMusic}>■</button>
             </div>
-            <div className="HomeImageBox">
-                <img src="" alt="" />
+            <div className="HomeMain">
+
             </div>
             <div className="NavBar">
                 <button className="active" value={0}>Home</button>
