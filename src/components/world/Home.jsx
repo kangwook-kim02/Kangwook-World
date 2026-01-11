@@ -2,6 +2,9 @@ import "./Home.css"
 import { useEffect, useState } from "react";
 import githubImage from "../images/github.png";
 import bojImage from "../images/boj.png";
+import csImage from "../images/cs.png";
+import fullstackImage from "../images/fullstack.png";
+
 const Home = ({ onClickButton }) => {
 
 
@@ -49,7 +52,7 @@ const Home = ({ onClickButton }) => {
 
 
     return <div className="Home">
-        <h2 className="Header">강욱 월드</h2>
+        <a href=""><h2 className="Header">강욱 월드</h2></a>
         <div className="HomeOutline">
             <div id="player">
             </div>
@@ -87,7 +90,23 @@ const Home = ({ onClickButton }) => {
             </div>
 
             <div className="HomeMain">
-
+                <div className="Inline">
+                    <div className="Top">
+                        <h3>핵심 역량</h3>
+                    </div>
+                    <div className="bottom">
+                        <div className="computerScience">
+                            <img className="csImage" src={csImage} alt="csImage" />
+                            <p style={{ marginBottom: 5, fontSize: "18px", fontWeight: "600", color: "black" }}>깊이 있는 전공지식</p>
+                            <p>컴퓨터공학과 전공을 하면서 자료구조, OS, DB, 컴퓨터 네트워크, 알고리즘 등 깊이 있는 CS 지식을 학습하였습니다.</p>
+                        </div>
+                        <div className="fullstack">
+                            <img className="fsImage" src={fullstackImage} alt="fullstackImage" />
+                            <p style={{ marginBottom: 5, fontSize: "18px", fontWeight: "600", color: "black" }}>풀스택 개발</p>
+                            <p>Spring을 이용한 백엔드 개발경험이 있으며, 현재는 프론트엔드를 집중해서 학습하고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="NavBar">
                 <button className="active" value={0}>Home</button>
