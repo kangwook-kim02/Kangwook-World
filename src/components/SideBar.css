@@ -144,20 +144,20 @@
 }
 
 .JavaScriptIcon {
-    width: 14px;
+  width: 14px;
   height: 14px;
   fill:#F7DF1E;
 }
 
 .ReactIcon {
-    width: 14px;
+  width: 14px;
   height: 14px;
   fill:#61DAFB;
 }
 
 .Info {
   font-size: 14px;
-   line-height: 1.6;
+  line-height: 1.6;
   color: #555;
 }
 
