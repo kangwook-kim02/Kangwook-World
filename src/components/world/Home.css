@@ -247,63 +247,18 @@
 
 .boj .badge {
   margin-left: auto;
-  background: #ffe08a;          /* 너무 쨍하면 #ffdf70 이런 톤 */
+  background: #ffe08a;         
   border: 1px solid rgba(0,0,0,0.15);
-  border-radius: 999px;         /* 원 → 알약 */
+  border-radius: 999px;       
   padding: 6px 10px;
   font-weight: 800;
   font-size: 13px;
   line-height: 1;
 
-  
 }
 
 .boj img {
-  background: #f4f8ff; /* 아주 연한 블루 */
-}
-
-.project {
-  padding: 40px;
-  background-color: white;
-  border-radius: 8px;
-}
-
-.projectMeta {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.projectMeta span {
-  font-size: 12px;
-  font-weight: 800;
-  padding: 5px 10px;
-  border-radius: 999px;
-  background: rgba(70, 140, 255, 0.12);
-  border: 1px solid rgba(70, 140, 255, 0.20);
-  color: rgba(30, 90, 200, 0.92);
-}
-
-.projectResults {
-  margin-top: 14px;
-  display: flex;
-  gap: 10px;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 36px;
-  padding: 0 14px;
-  border-radius: 12px;
-  border: 1px solid rgba(0,0,0,0.10);
-  background: rgba(0,0,0,0.04);
-  color: rgba(0,0,0,0.75);
-  font-weight: 900;
-  font-size: 13px;
-  text-decoration: none;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  background: #f4f8ff; 
 }
 
 .btn:hover {
