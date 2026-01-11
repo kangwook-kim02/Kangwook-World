@@ -51,7 +51,7 @@
 
 .HomeMain {
   width: 908px;
-  height: 100%;
+  height: 70%;
 
   background: #d9d9d9;
   border-radius: 8px;
@@ -235,7 +235,7 @@
 }
 
 .handle a {
-    text-decoration-line: none;
+  text-decoration-line: none;
   color: #555;
 }
 
@@ -266,10 +266,39 @@
   box-shadow: 0 10px 18px rgba(0,0,0,0.10);
 }
 
-.HomeMain h2 {
-  margin-top: 0;
+.Inline {
+  height: 95%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.project h3 {
+.bottom {
+  display: flex;
+  gap: 50px;
+}
+
+.csImage {
+  width: 300px;
+  height: 200px;
+}
+
+.fsImage {
+  width: 300px;
+  height: 200px;
+}
+
+.computerScience {
+  width: 350px;
+}
+
+.fullstack {
+  width: 350px;
+}
+
+.Top h3 {
   margin-top: 0;
 }
