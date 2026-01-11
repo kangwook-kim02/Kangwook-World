@@ -112,3 +112,8 @@
   color: #ffffff;
   opacity: 0.9;
 }
+
+.Profile a {
+  text-decoration-line: none;
+  color: black;
+}

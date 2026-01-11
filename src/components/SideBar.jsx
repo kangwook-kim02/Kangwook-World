@@ -54,11 +54,11 @@ const SideBar = () => {
     }
 
     return <div className="SideBar">
-        <h2 className="Header">김강욱님의 미니홈피</h2>
+        <a href="/"><h2 className="Header">김강욱님의 미니홈피</h2></a>
         <div className="ProfileOutline">
             <div className="ProfileInline">
                 <div className="ImageBox">
-                    <img src={profileImage} alt="" />
+                    <a href="/"><img src={profileImage} alt="" /></a>
                 </div>
                 <div className="Divider"></div>
                 <div className="Introduce">

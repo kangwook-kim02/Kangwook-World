@@ -5,7 +5,7 @@ import Example from "./Project/example";
 
 const Project = ({ onClickButton }) => {
     return <div className="Project">
-        <h2 className="Header">강욱 월드</h2>
+        <a href="/"><h2 className="Header">강욱 월드</h2></a>
         <div className="ProjectOutline">
             <div className="ProjectList">
                 <PacRep />

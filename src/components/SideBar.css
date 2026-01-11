@@ -165,3 +165,8 @@
   text-decoration-line: none;
   color: #555;
 }
+
+.SideBar > a {
+  text-decoration-line: none;
+  color: black;
+}
