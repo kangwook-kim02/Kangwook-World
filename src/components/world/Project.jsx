@@ -1,12 +1,15 @@
 import "./Project.css"
+import PacRep from "./Project/PacRep";
+import Example from "./Project/example";
 
 
 const Project = ({ onClickButton }) => {
     return <div className="Project">
         <h2 className="Header">강욱 월드</h2>
         <div className="ProjectOutline">
-            <div>
-                <h1>Project</h1>
+            <div className="ProjectList">
+                <PacRep />
+                <Example />
             </div>
             <div className="NavBar">
                 <button value={0} onClick={onClickButton}>Home</button>
