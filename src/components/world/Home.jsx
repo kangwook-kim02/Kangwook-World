@@ -1,5 +1,5 @@
 import "./Home.css"
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import githubImage from "../images/github.png";
 import bojImage from "../images/boj.png";
 import csImage from "../images/cs.png";
@@ -10,7 +10,7 @@ const Home = ({ onClickButton }) => {
 
 
     const [playing, setPlaying] = useState("▶");
-
+    const playerRef = useRef(null);
     // Youtube API 가져오기
     useEffect(() => {
         const tag = document.createElement("script");
@@ -18,7 +18,7 @@ const Home = ({ onClickButton }) => {
         document.body.appendChild(tag);
 
         window.onYouTubeIframeAPIReady = () => {
-            window.player = new window.YT.Player("player", {
+            playerRef.current = new window.YT.Player("player", {
                 height: "0",
                 width: "0",
                 videoId: "7Foj-iWij00",
@@ -33,19 +33,19 @@ const Home = ({ onClickButton }) => {
     const playMusic = (e) => {
         if (e.target.value === "▶") {
             setPlaying("⏸")
-            window.player.playVideo();
+            playerRef.current.playVideo();
         }
         else {
             setPlaying("▶")
-            window.player.pauseVideo();
+            playerRef.current.pauseVideo();
         }
     }
 
     const restartMusic = () => {
-        if (!window.player) return;
+        if (!playerRef.current) return;
         if (playing === "⏸") {
-            window.player.seekTo(0, true);
-            window.player.playVideo();
+            playerRef.current.seekTo(0, true);
+            playerRef.current.playVideo();
         }
 
     }
