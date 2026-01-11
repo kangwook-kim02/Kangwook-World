@@ -10,8 +10,12 @@
   gap: 14px; 
 }
 
+.Home a {
+  text-decoration-line: none;
+  color: black;
+}
 
-.Home > .Header {
+.Header {
   width: 260px;
   height: 60px;
 

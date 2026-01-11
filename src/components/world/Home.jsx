@@ -52,7 +52,7 @@ const Home = ({ onClickButton }) => {
 
 
     return <div className="Home">
-        <h2 className="Header">강욱 월드</h2>
+        <a href=""><h2 className="Header">강욱 월드</h2></a>
         <div className="HomeOutline">
             <div id="player">
             </div>
