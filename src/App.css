@@ -19,7 +19,7 @@ body {
     gap: 15px;
     padding: 22px;
     background-color: #86ccff;
-    box-shadow: 0 18px 45px rgba(0,0,0,0.12); /* 떠보이는 게 아니라 '잡아줌' */
+    box-shadow: 0 18px 45px rgba(0,0,0,0.12);
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 18px;
 }
