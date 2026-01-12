@@ -3,7 +3,7 @@ import "./Profile.css"
 
 const Profile = ({ onClickButton }) => {
     return <div className="Profile">
-        <a href=""><h2 className="Header">강욱 월드</h2></a>
+        <a href="/"><h2 className="Header">강욱 월드</h2></a>
         <div className="ProfileOutline">
             <div className="ProfileList">
                 <div className="ProfileInfo">
@@ -14,8 +14,8 @@ const Profile = ({ onClickButton }) => {
                     <p className="detail">웹개발, 네트워크, 데이터마이닝, AI</p>
                     <p className="topic">경력</p>
                     <p className="detail" id="history1">2025.6 ~ 2025.12 학부연구생, DNSLab, 인하대학교.
-                        <p className="undergraduate">- ICT융합 공공 서비스·인프라의 암호화 사이버위협에 대한 네트워크 행위기반 보안관제 기술 개발(RS-2023-00235509)</p>
-                        <p className="undergraduate">- 암호화 트래픽 분류</p>
+                        <span className="undergraduate">- ICT융합 공공 서비스·인프라의 암호화 사이버위협에 대한 네트워크 행위기반 보안관제 기술 개발(RS-2023-00235509)</span>
+                        <span className="undergraduate">- 암호화 트래픽 분류</span>
                     </p>
                     <p></p>
                     <p className="topic">논문 및 수상</p>
