@@ -3,7 +3,7 @@ import "./Profile.css"
 
 const Profile = ({ onClickButton }) => {
     return <div className="Profile">
-        <a href="/"><h2 className="Header">강욱 월드</h2></a>
+        <a href=""><h2 className="Header">강욱 월드</h2></a>
         <div className="ProfileOutline">
             <div className="ProfileList">
                 <div className="ProfileInfo">
