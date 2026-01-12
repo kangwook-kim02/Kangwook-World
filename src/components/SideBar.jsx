@@ -4,6 +4,7 @@ import CppIcon from "./icons/cplusplus.svg?react";
 import PythonIcon from "./icons/python.svg?react";
 import JavaScriptIcon from "./icons/javascript.svg?react";
 import ReactIcon from "./icons/react.svg?react";
+import worldLogo from "../../worldLogo.png";
 import { useState } from "react";
 
 const SideBar = () => {
@@ -54,7 +55,7 @@ const SideBar = () => {
     }
 
     return <div className="SideBar">
-        <a href=""><h2 className="Header">강욱월드</h2></a>
+        <a href=""><h2 className="Header"><img src={worldLogo} alt="worldLogo" /></h2></a>
         <div className="ProfileOutline">
             <div className="ProfileInline">
                 <div className="ImageBox">

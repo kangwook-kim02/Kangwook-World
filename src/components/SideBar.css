@@ -171,3 +171,8 @@
   text-decoration-line: none;
   color: black;
 }
+
+.SideBar > a  > h2 >img {
+  width: 50px;
+  height: 50px;
+}
