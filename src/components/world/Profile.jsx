@@ -3,7 +3,7 @@ import "./Profile.css"
 
 const Profile = ({ onClickButton }) => {
     return <div className="Profile">
-        <a href=""><h2 className="Header">강욱 월드</h2></a>
+        <a href=""><h2 className="Header">프로필</h2></a>
         <div className="ProfileOutline">
             <div className="ProfileList">
                 <div className="ProfileInfo">
@@ -25,9 +25,9 @@ const Profile = ({ onClickButton }) => {
                 </div>
             </div>
             <div className="NavBar">
-                <button value={0} onClick={onClickButton}>Home</button>
-                <button className="active" value={1}>Profile</button>
-                <button value={2} onClick={onClickButton}>Project</button>
+                <button value={0} onClick={onClickButton}>홈</button>
+                <button className="active" value={1}>프로필</button>
+                <button value={2} onClick={onClickButton}>프로젝트</button>
             </div>
         </div>
     </div>

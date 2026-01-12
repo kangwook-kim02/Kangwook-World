@@ -5,16 +5,16 @@ import Example from "./Project/example";
 
 const Project = ({ onClickButton }) => {
     return <div className="Project">
-        <a href=""><h2 className="Header">강욱 월드</h2></a>
+        <a href=""><h2 className="Header">프로젝트</h2></a>
         <div className="ProjectOutline">
             <div className="ProjectList">
                 <PacRep />
                 <Example />
             </div>
             <div className="NavBar">
-                <button value={0} onClick={onClickButton}>Home</button>
-                <button value={1} onClick={onClickButton}>Profile</button>
-                <button className="active" value={2}>Project</button>
+                <button value={0} onClick={onClickButton}>홈</button>
+                <button value={1} onClick={onClickButton}>프로필</button>
+                <button className="active" value={2}>프로젝트</button>
             </div>
         </div>
     </div>

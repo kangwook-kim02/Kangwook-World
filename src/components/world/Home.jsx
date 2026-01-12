@@ -52,7 +52,7 @@ const Home = ({ onClickButton }) => {
 
 
     return <div className="Home">
-        <a href=""><h2 className="Header">강욱 월드</h2></a>
+        <a href=""><h2 className="Header">홈</h2></a>
         <div className="HomeOutline">
             <div id="player">
             </div>
@@ -109,9 +109,9 @@ const Home = ({ onClickButton }) => {
                 </div>
             </div>
             <div className="NavBar">
-                <button className="active" value={0}>Home</button>
-                <button value={1} onClick={onClickButton}>Profile</button>
-                <button value={2} onClick={onClickButton}>Project</button>
+                <button className="active" value={0}>홈</button>
+                <button value={1} onClick={onClickButton}>프로필</button>
+                <button value={2} onClick={onClickButton}>프로젝트</button>
             </div>
         </div>
     </div>
