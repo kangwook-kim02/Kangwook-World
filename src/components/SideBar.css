@@ -129,6 +129,7 @@
   color: #222;
 
   white-space: nowrap; 
+  cursor: default;
 }
 
 .CplusplusIcon {
