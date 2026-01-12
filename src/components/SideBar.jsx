@@ -58,7 +58,7 @@ const SideBar = () => {
         <div className="ProfileOutline">
             <div className="ProfileInline">
                 <div className="ImageBox">
-                    <a href="/"><img src={profileImage} alt="" /></a>
+                    <a href=""><img src={profileImage} alt="" /></a>
                 </div>
                 <div className="Divider"></div>
                 <div className="Introduce">
