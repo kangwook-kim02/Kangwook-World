@@ -17,13 +17,13 @@ const PacRep = () => {
                     <span>2025.12.16~12.19</span>
                 </div>
                 <div className="projectResults">
-                    <a className="btn" href="/paper.pdf" target="_blank" rel="noreferrer">
+                    <a className="btn" href={`${import.meta.env.BASE_URL}paper.pdf`} target="_blank" rel="noreferrer">
                         PDF
                     </a>
                     <a className="btn" href="https://github.com/kangwook-kim02/PacRep" target="_blank" rel="noreferrer">
                         GitHub
                     </a>
-                    <a className="btn" href="/poster.pdf" target="_blank" rel="noreferrer">
+                    <a className="btn" href={`${import.meta.env.BASE_URL}poster.pdf`} target="_blank" rel="noreferrer">
                         Poster
                     </a>
                 </div>
