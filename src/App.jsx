@@ -12,6 +12,16 @@ function App() {
   */
   useEffect(() => {
     function resize() {
+
+      const el = document.getElementById("world");
+      if (!el) return;
+      
+          // 모바일(터치 디바이스)이면 scale 하지 않음
+      const isTouch = window.matchMedia("(pointer: coarse)").matches;
+      if (isTouch) {
+        el.style.transform = "none";
+        return;
+      }
       const baseW = 1920;
       const baseH = 1080;
 
