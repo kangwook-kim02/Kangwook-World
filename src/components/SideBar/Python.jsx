@@ -6,7 +6,7 @@ const Python = ({ onMouseOverText, onMouseOutText }) => {
 
     return (
         <div className="Skill" data-skill="python" onMouseOver={(e) => onMouseOverText(e, setPythonText)} onMouseOut={(e) => onMouseOutText(e, setPythonText)}>
-            <PythonIcon className="PythonIcon" /> <span className="PythonText">{pythonText}</span>
+            <PythonIcon className="Icon" id="PythonIcon" /> <span className="PythonText">{pythonText}</span>
         </div>
     );
 }

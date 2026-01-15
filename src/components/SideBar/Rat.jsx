@@ -6,7 +6,7 @@ const Rat = ({ onMouseOverText, onMouseOutText }) => {
 
     return (
         <div className="Skill" data-skill="react" onMouseOver={(e) => onMouseOverText(e, setReactText)} onMouseOut={(e) => onMouseOutText(e, setReactText)}>
-            <ReactIcon className="ReactIcon" /> <span className="ReactText">{reactText}</span>
+            <ReactIcon className="Icon" id="ReactIcon" /> <span className="ReactText">{reactText}</span>
         </div>
     );
 }

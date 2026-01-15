@@ -51,7 +51,7 @@ const SideBar = () => {
     }
 
     return <div className="SideBar">
-        <a href=""><h2 className="Header"><img src={worldLogo} alt="worldLogo" /></h2></a>
+        <a href=""><h2 className="Header"><img className="WorldLogo" src={worldLogo} alt="worldLogo" /></h2></a>
         <div className="ProfileOutline">
             <div className="ProfileInline">
                 <div className="ImageBox">

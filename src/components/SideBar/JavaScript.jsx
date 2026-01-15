@@ -6,7 +6,7 @@ const JavaScript = ({ onMouseOverText, onMouseOutText }) => {
 
     return (
         <div className="Skill" data-skill="javaScript" onMouseOver={(e) => onMouseOverText(e, setJsText)} onMouseOut={(e) => onMouseOutText(e, setJsText)}>
-            <JavaScriptIcon className="JavaScriptIcon" /> <span className="JavaScriptText">{jsText}</span>
+            <JavaScriptIcon className="Icon" id="JavaScriptIcon" /> <span className="JavaScriptText">{jsText}</span>
         </div>
     );
 }

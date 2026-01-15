@@ -6,7 +6,7 @@ const Cpp = ({ onMouseOverText, onMouseOutText }) => {
 
     return (
         <div className="Skill" data-skill="cpp" onMouseOver={(e) => onMouseOverText(e, setCppText)} onMouseOut={(e) => onMouseOutText(e, setCppText)}>
-            <CppIcon className="CplusplusIcon" /> <span className="CplusplusText">{cppText}</span>
+            <CppIcon className="Icon" id="CplusplusIcon" /> <span className="CplusplusText">{cppText}</span>
         </div>
     );
 }
