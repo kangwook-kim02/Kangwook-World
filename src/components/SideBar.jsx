@@ -1,54 +1,50 @@
 import "./SideBar.css";
 import profileImage from "./images/profileImage.png";
-import CppIcon from "./icons/cplusplus.svg?react";
-import PythonIcon from "./icons/python.svg?react";
-import JavaScriptIcon from "./icons/javascript.svg?react";
-import ReactIcon from "./icons/react.svg?react";
 import worldLogo from "../../worldLogo.png";
-import { useState } from "react";
+
+
+import Cpp from "./SideBar/Cpp";
+import Python from "./SideBar/Python";
+import JavaScript from "./SideBar/JavaScript";
+import Rat from "./SideBar/Rat";
 
 const SideBar = () => {
 
-    const [cppText, setCppText] = useState("C++");
-    const [pythonText, setPythonText] = useState("Python");
-    const [jsText, setJsText] = useState("JavaScript");
-    const [reactText, setReactText] = useState("React");
-
     // 기술(Skill) 안으로 마우스가 들어왔을 때 이벤트 처리 함수
-    const onMouseOverText = (e) => {
+    const onMouseOverText = (e, setText) => {
         let skill = e.currentTarget.dataset.skill;
         switch (skill) {
             case "cpp":
-                setCppText("★★★★★");
+                setText("★★★★★");
                 return;
             case "python":
-                setPythonText("★★★☆☆");
+                setText("★★★☆☆");
                 return;
             case "javaScript":
-                setJsText("★★★★☆");
+                setText("★★★★☆");
                 return;
             case "react":
-                setReactText("★★★★☆");
+                setText("★★★★☆");
                 return;
             default:
         }
     }
 
     // 기술(SKill) 밖으로 마우스가 나갔을 때 이벤트 처리 함수
-    const onMouseOutText = (e) => {
+    const onMouseOutText = (e, setText) => {
         let skill = e.currentTarget.dataset.skill;
         switch (skill) {
             case "cpp":
-                setCppText("C++");
+                setText("C++");
                 return;
             case "python":
-                setPythonText("Python");
+                setText("Python");
                 return;
             case "javaScript":
-                setJsText("JavaScript");
+                setText("JavaScript");
                 return;
             case "react":
-                setReactText("React");
+                setText("React");
                 return;
             default:
         }
@@ -71,18 +67,10 @@ const SideBar = () => {
 
                 <h4 className="SkillTitle">⚙️ Skills</h4>
                 <div className="SkillList">
-                    <div className="Skill" data-skill="cpp" onMouseOver={onMouseOverText} onMouseOut={onMouseOutText}>
-                        <CppIcon className="CplusplusIcon" /> <span className="CplusplusText">{cppText}</span>
-                    </div>
-                    <div className="Skill" data-skill="python" onMouseOver={onMouseOverText} onMouseOut={onMouseOutText}>
-                        <PythonIcon className="PythonIcon" /> <span className="PythonText">{pythonText}</span>
-                    </div>
-                    <div className="Skill" data-skill="javaScript" onMouseOver={onMouseOverText} onMouseOut={onMouseOutText}>
-                        <JavaScriptIcon className="JavaScriptIcon" /> <span className="JavaScriptText">{jsText}</span>
-                    </div>
-                    <div className="Skill" data-skill="react" onMouseOver={onMouseOverText} onMouseOut={onMouseOutText}>
-                        <ReactIcon className="ReactIcon" /> <span className="ReactText">{reactText}</span>
-                    </div>
+                    <Cpp onMouseOverText={onMouseOverText} onMouseOutText={onMouseOutText} />
+                    <Python onMouseOverText={onMouseOverText} onMouseOutText={onMouseOutText} />
+                    <JavaScript onMouseOverText={onMouseOverText} onMouseOutText={onMouseOutText} />
+                    <Rat onMouseOverText={onMouseOverText} onMouseOutText={onMouseOutText} />
                 </div>
 
                 <div className="Divider"></div>
