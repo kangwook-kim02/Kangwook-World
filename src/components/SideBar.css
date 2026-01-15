@@ -167,6 +167,10 @@
   color: #555;
 }
 
+.Info a:hover {
+  color : lightgray;
+}
+
 .SideBar > a {
   /* design */
   text-decoration-line: none;
