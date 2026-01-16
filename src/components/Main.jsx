@@ -16,13 +16,13 @@ const Main = () => {
     }
 
     if (pageState === 0) {
-        return <Home onClickButton={onClickButton} />;
+        return <Home onClickButton={onClickButton} pageState={pageState} />;
     }
     else if (pageState === 1) {
-        return <Profile onClickButton={onClickButton} />;
+        return <Profile onClickButton={onClickButton} pageState={pageState} />;
     }
     else if (pageState === 2) {
-        return <Project onClickButton={onClickButton} />;
+        return <Project onClickButton={onClickButton} pageState={pageState} />;
     }
 
 }
