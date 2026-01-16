@@ -1,0 +1,42 @@
+.NavBar {
+    /* layout */
+    position: absolute;
+    top: 0px;
+    right: -90px; 
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.NavBar button {
+    /* layout */
+    all: unset;
+    width: 92px;
+    padding: 10px 0;
+    text-align: center;
+    position: relative; 
+  
+    /* design */
+    background: #2f6fdc;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 0 10px 10px 0;
+    border-left: 3px solid rgba(255,255,255,0.35);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.NavBar button:hover {
+    transform: translateX(2px);
+}
+
+/*before 키워드를 이용해 active된 버튼 앞에 가상 요소 추가*/
+.NavBar button.active::before {
+    /* design */
+    content: "●";
+    left: 5px;
+    font-size: 10px;
+    color: #ffffff;
+    opacity: 0.9;
+}

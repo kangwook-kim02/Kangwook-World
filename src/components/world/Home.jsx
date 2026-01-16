@@ -1,11 +1,14 @@
 import "./Home.css"
+import NavBar from "../NavBar";
 import { useEffect, useState, useRef } from "react";
+
+// Image
 import githubImage from "../images/github.png";
 import bojImage from "../images/boj.png";
 import csImage from "../images/cs.png";
 import fullstackImage from "../images/fullstack.png";
 
-const Home = ({ onClickButton }) => {
+const Home = ({ onClickButton, pageState }) => {
 
 
 
@@ -108,11 +111,7 @@ const Home = ({ onClickButton }) => {
                     </div>
                 </div>
             </div>
-            <div className="NavBar">
-                <button className="active" value={0}>홈</button>
-                <button value={1} onClick={onClickButton}>프로필</button>
-                <button value={2} onClick={onClickButton}>프로젝트</button>
-            </div>
+            <NavBar onClickButton={onClickButton} pageState={pageState} />
         </div>
     </div>
 }

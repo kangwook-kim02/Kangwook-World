@@ -1,7 +1,7 @@
 import "./Profile.css"
+import NavBar from "../NavBar";
 
-
-const Profile = ({ onClickButton }) => {
+const Profile = ({ onClickButton, pageState }) => {
     return <div className="Profile">
         <a href=""><h2 className="Header">프로필</h2></a>
         <div className="ProfileOutline">
@@ -24,11 +24,7 @@ const Profile = ({ onClickButton }) => {
                         Payload Dependency in Encrypted Traffic Classification," kiise (Poster), Dec.2025.</p>
                 </div>
             </div>
-            <div className="NavBar">
-                <button value={0} onClick={onClickButton}>홈</button>
-                <button className="active" value={1}>프로필</button>
-                <button value={2} onClick={onClickButton}>프로젝트</button>
-            </div>
+            <NavBar onClickButton={onClickButton} pageState={pageState} />
         </div>
     </div>
 }

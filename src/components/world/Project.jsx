@@ -1,9 +1,12 @@
 import "./Project.css"
+
+// projects
 import PacRep from "./Project/PacRep";
 import Example from "./Project/example";
+import NavBar from "../NavBar";
 
 
-const Project = ({ onClickButton }) => {
+const Project = ({ onClickButton, pageState }) => {
     return <div className="Project">
         <a href=""><h2 className="Header">프로젝트</h2></a>
         <div className="ProjectOutline">
@@ -11,11 +14,7 @@ const Project = ({ onClickButton }) => {
                 <PacRep />
                 <Example />
             </div>
-            <div className="NavBar">
-                <button value={0} onClick={onClickButton}>홈</button>
-                <button value={1} onClick={onClickButton}>프로필</button>
-                <button className="active" value={2}>프로젝트</button>
-            </div>
+            <NavBar onClickButton={onClickButton} pageState={pageState} />
         </div>
     </div>
 }
