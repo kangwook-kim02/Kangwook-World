@@ -2,7 +2,7 @@ import "./Project.css"
 
 // projects
 import PacRep from "./Project/PacRep";
-import Example from "./Project/example";
+import Example from "./Project/Example";
 import NavBar from "../NavBar";
 
 
