@@ -1,4 +1,5 @@
-import "./Project.css"
+import "./Project.css";
+import "./World.css";
 
 // projects
 import PacRep from "./Project/PacRep";
