@@ -1,5 +1,5 @@
 import "./SideBar.css";
-import profileImage from "./images/profileImage.png";
+import profileImage from "./images/profile.png";
 import worldLogo from "../../worldLogo.png";
 
 
