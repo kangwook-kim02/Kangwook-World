@@ -1,0 +1,88 @@
+.card {
+  display: flex;
+  gap: 5px;
+}
+
+.github, .boj {
+  /*layout*/
+  width: 285px;
+  padding: 14px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  /*design*/
+  background: #d9d9d9;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.github:hover, .boj:hover  {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.github img, .boj img {
+  /*layout*/
+  width: 42px;
+  height: 42px;
+  padding: 6px;
+
+  /*design*/
+  object-fit: contain;
+  background: white;
+  border-radius: 50%;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
+}
+
+.github .info, .boj .info {
+  /*layout*/
+  display: flex;
+  flex-direction: column;
+}
+
+.github .name, .boj .name {
+  /*design*/
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.github .handle, .boj .handle {
+  /*design*/
+  font-size: 13px;
+  color: #555;
+}
+
+.handle a {
+  /*design*/
+  text-decoration-line: none;
+  color: #555;
+}
+
+.boj {
+  /*layout*/
+  width: 285px;
+}
+
+.boj .badge {
+  /*layout*/
+  margin-left: auto;
+  padding: 6px 10px;
+
+  /*design*/
+  background: #ffe08a;         
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 999px;       
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.boj img {
+  /*design*/
+  background: #f4f8ff; 
+}
