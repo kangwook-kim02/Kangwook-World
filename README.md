@@ -35,12 +35,15 @@
 <img src="./assets/skillOnmouse.PNG " alt="스킬 마우스 올렸을 때" >
 - 현재 사용 가능한 기술들을 정리해놓았으며, 마우스를 올려보면 상대적 기술 사용 실력을 확인할 수 있습니다.</p>
 
+----
 
 ### 프로필 
 <p><img src="./assets/Profile.PNG " alt="프로필" >
 - Profile 월드
 - 학력, 관심분야, 경력, 논문 및 수상 정보를 확인할 수 있습니다.
 </p>
+
+----
 
 ### 프로젝트 
 <p><img src="./assets/project.PNG " alt="프로젝트" >
