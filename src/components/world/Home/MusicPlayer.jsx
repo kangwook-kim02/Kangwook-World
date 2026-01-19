@@ -28,6 +28,7 @@ const MusicPlayer = () => {
 
     // 음악 재생 버튼 기능
     const playMusic = () => {
+        if (!playerRef.current) return; // 유튜브 API 로딩 전 오류 방지
         if (playing) { // 재생 --> 정지
             setPlaying(false);
             playerRef.current.pauseVideo();
