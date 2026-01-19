@@ -2,11 +2,9 @@ import "./Home.css";
 import "./World.css";
 import NavBar from "../NavBar";
 import MusicPlayer from "./Home/MusicPlayer";
-import { useEffect, useState, useRef } from "react";
+import Card from "./Home/Card";
 
 // Image
-import githubImage from "../images/github.png";
-import bojImage from "../images/boj.png";
 import csImage from "../images/cs.png";
 import fullstackImage from "../images/fullstack.png";
 
@@ -18,26 +16,9 @@ const Home = ({ onClickButton, pageState }) => {
             </div>
 
             <div className="top">
-
                 <MusicPlayer />
-                <div className="github">
-                    <img src={githubImage} />
-                    <div className="info">
-                        <div className="name">GitHub</div>
-                        <div className="handle"><a href="https://github.com/kangwook-kim02" target='_blank' rel="noopener noreferrer">@kangwook-kim02</a></div>
-                    </div>
-                </div>
-
-                <div className="boj">
-                    <img src={bojImage} />
-                    <div className="info">
-                        <div className="name">BaekJoon</div>
-                        <div className="handle"><a href="https://solved.ac/profile/ices17" target='_blank' rel="noopener noreferrer">@ices17</a></div>
-                    </div>
-                    <div className="badge">G4</div>
-                </div>
+                <Card />
             </div>
-
             <div className="HomeMain">
                 <div className="Inline">
                     <div className="Top">
