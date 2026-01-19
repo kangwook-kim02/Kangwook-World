@@ -1,4 +1,5 @@
-import "./Home.css"
+import "./Home.css";
+import "./World.css";
 import NavBar from "../NavBar";
 import { useEffect, useState, useRef } from "react";
 
