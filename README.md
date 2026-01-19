@@ -31,7 +31,7 @@
 - Home 월드 내부에 뮤직플레이어가 존재하여 음악을 재생하여 들을 수 있습니다.</p>
 <p><img src="./assets/Card.PNG " alt="카드" >
 - 깃허브, 백준 페이지로 이동할 수 있습니다.</p>
-<p><img src="./assets/Skill.PNG " alt="스킬" >
+<p>
 <img src="./assets/skillOnmouse.PNG " alt="스킬 마우스 올렸을 때" >
 - 현재 사용 가능한 기술들을 정리해놓았으며, 마우스를 올려보면 상대적 기술 사용 실력을 확인할 수 있습니다.</p>
 
