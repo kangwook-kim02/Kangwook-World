@@ -1,4 +1,5 @@
 .HomeOutline {
+  /*layout*/
   flex-direction: column; 
   justify-content: center; 
   align-items: flex-start; 
@@ -6,74 +7,83 @@
 }
 
 .Home a {
+  /*design*/
   text-decoration-line: none;
   color: black;
 }
 
 .HomeMain {
+  /*layout*/
   width: 908px;
   height: 70%;
+  margin: 0;
+  padding: 20px;
 
+  /*design*/
   background: #d9d9d9;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
-
-  margin: 0;
-  padding: 20px;
 }
 
 .Music {
+  /*layout*/
+  padding: 10px 12px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 370px;
+
+  /*design*/
   background: #d9d9d9;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
-
-  padding: 10px 12px;
-  box-sizing: border-box;
-
-  display: inline-block;
-  width: 370px;
-
   transition: all 0.2s ease;
 }
 
 .Music:hover {
-    transform: translateY(-3px);
+  transform: translateY(-3px);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
 }
 
 .MusicName {
+  /*layout*/
   height: 30px;
-  background: #ffffff;
-  border-radius: 16px;
   padding: 6px 12px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
-
   display: flex;
   align-items: center;
   gap: 10px;
+
+  /*design*/
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
 }
 
 .MusicName span {
+  /*layout*/
+  margin-left: 5px;
+
+  /*design*/
   background-color: transparent;
   outline: none;  
-  margin-left: 5px;
 }
 
 
 .Music button {
+  /*layout*/
   width: 26px;
   height: 26px;
+  margin-right: 3px;
+
+  /*design*/
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.15);
   line-height: 1;
   cursor: pointer;
-
   font-size:10px;
-  margin-right: 3px;
 }
 
 .Music button:hover {
@@ -94,26 +104,27 @@
 }
 
 .top {
+  /*layout*/
   width: 952px;
   height: 95px;
   display: flex;
-
   gap:5px;
 }
 
 .github, .boj {
+  /*layout*/
   width: 285px;
-  background: #d9d9d9;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
   padding: 14px;
   box-sizing: border-box;
-
   display: flex;
   align-items: center;
   gap: 12px;
 
+  /*design*/
+  background: #d9d9d9;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
   transition: all 0.2s ease;
   cursor: pointer;
 }
@@ -124,56 +135,65 @@
 }
 
 .github img, .boj img {
+  /*layout*/
   width: 42px;
   height: 42px;
+  padding: 6px;
+
+  /*design*/
   object-fit: contain;
   background: white;
   border-radius: 50%;
-  padding: 6px;
   box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
-
-  
 }
 
 .github .info, .boj .info {
+  /*layout*/
   display: flex;
   flex-direction: column;
 }
 
 .github .name, .boj .name {
+  /*design*/
   font-weight: 700;
   font-size: 15px;
 }
 
 .github .handle, .boj .handle {
+  /*design*/
   font-size: 13px;
   color: #555;
 }
 
 .handle a {
+  /*design*/
   text-decoration-line: none;
   color: #555;
 }
 
 .boj {
+  /*layout*/
   width: 285px;
 }
 
 
 
 .boj .badge {
+  /*layout*/
   margin-left: auto;
+  padding: 6px 10px;
+
+  /*design*/
   background: #ffe08a;         
   border: 1px solid rgba(0,0,0,0.15);
   border-radius: 999px;       
-  padding: 6px 10px;
   font-weight: 800;
   font-size: 13px;
   line-height: 1;
-
 }
 
 .boj img {
+  /*design*/
   background: #f4f8ff; 
 }
 
@@ -183,45 +203,60 @@
 }
 
 .Inline {
+  /*layout*/
   height: 95%;
-  background-color: white;
   padding: 10px;
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  /*design*/
+  background-color: white;
+  border-radius: 8px;
 }
 
 .bottom {
+  /*layout*/
   display: flex;
   gap: 50px;
 }
 
 .csImage {
+  /*layout*/
   width: 300px;
   height: 200px;
 }
 
 .fsImage {
+  /*layout*/
   width: 300px;
   height: 200px;
 }
 
 .computerScience {
+  /*layout*/
   width: 350px;
 }
 
 .fullstack {
+  /*layout*/
   width: 350px;
 }
 
 .Top h3 {
+  /*layout*/
   margin-top: 0;
+
+  /*design*/
   color: #2f6fdc;
 }
 
 .computerScience p, .fullstack p {
+  /*layout*/
+  margin:0;
+  
+  /*design*/
   font-size: 14px;
   color: #555;
-  margin:0;
+
 }

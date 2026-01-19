@@ -1,56 +1,75 @@
 .ProfileOutline {
-    align-items: flex-start;
+  /*layout*/
+  align-items: flex-start;
 }
 
 .Profile a {
+  /*design*/
   text-decoration-line: none;
   color: black;
 }
+
 .ProfileInfo {
-  background: white;
-  border-radius: 18px;
+  /*layout*/
   padding: 32px 40px;
   max-width: 900px;
   margin: 0 auto;
+  column-gap: 40px;
+
+  /*design*/
+  background: white;
+  border-radius: 18px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-  column-gap: 40px; 
+  
 }
 
 .ProfileInfo h2 {
+  /*layout*/
   margin-top: 0;
+  margin-bottom: 24px;
+
+  /*design*/
   font-size: 32px;
   font-weight: 800;
-  margin-bottom: 24px;
 }
 
 .topic {
+  /*layout*/
   margin-bottom: 0;
+  margin-top: 24px;
+  padding-left: 12px;
+  
+  /*design*/
   font-size: 26px;
   font-weight: 700;
-  margin-top: 24px;
   color: #2f7cf6; 
   border-left: 4px solid #2f7cf6;
-  padding-left: 12px;
 }
 
 .detail, .prizeDetail, .paperDetail {
+  /*layout*/
   margin-top: 8px;
+  padding: 10px 14px;
+
+  /*design*/
   font-size: 20px;
   line-height: 1.6;
   color: #333;
   background: #f7faff;
-  padding: 10px 14px;
   border-radius: 10px;
 }
 
 .undergraduate {
+  /*layout*/
   margin: 0;
-  font-size: 18px;
-  color: #555;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 24px;
   display: block;
+
+  /*design*/
+  font-size: 18px;
+  color: #555;
 }
 
 #history1 {
@@ -62,10 +81,13 @@
 }
 
 .ProfileList {
+  /*layout*/
   height: 90%;    
   overflow-y: auto;   
-  background-color: #d9d9d9;
   padding: 20px;
+
+  /*design*/
+  background-color: #d9d9d9;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
