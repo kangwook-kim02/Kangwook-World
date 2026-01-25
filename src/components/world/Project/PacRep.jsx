@@ -32,7 +32,12 @@ const PacRep = () => {
           >
             GitHub
           </a>
-          <a className="btn" href="poster.pdf" target="_blank" rel="noreferrer">
+          <a
+            className="btn"
+            href="/poster.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
             Poster
           </a>
         </div>
