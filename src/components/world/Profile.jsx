@@ -1,4 +1,5 @@
-import "./Profile.css"
+import "./Profile.css";
+import "./World.css";
 import NavBar from "../NavBar";
 
 const Profile = ({ onClickButton, pageState }) => {

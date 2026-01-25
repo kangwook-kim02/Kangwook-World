@@ -1,35 +1,44 @@
 .outline {
-    background: #d9d9d9;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    padding: 14px;
-    box-sizing: border-box;
+  /*layout*/
+  padding: 14px;
+  box-sizing: border-box;
 
-    transition: all 0.2s ease;
+  /*design*/
+  background: #d9d9d9;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  transition: all 0.2s ease;
 }
 
 .outline:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
 }
 
 .project {
+  /*layout*/
   padding: 40px;
+
+  /*design*/
   background-color: white;
   border-radius: 8px;
 }
 
 .projectMeta {
+  /*layout*/
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
 }
 
 .projectMeta span {
+  /*layout*/
+  padding: 5px 10px;
+
+  /*design*/
   font-size: 12px;
   font-weight: 800;
-  padding: 5px 10px;
   border-radius: 999px;
   background: rgba(70, 140, 255, 0.12);
   border: 1px solid rgba(70, 140, 255, 0.20);
@@ -37,17 +46,21 @@
 }
 
 .projectResults {
+  /*layout*/
   margin-top: 14px;
   display: flex;
   gap: 10px;
 }
 
 .btn {
+  /*layout*/
   display: inline-flex;
   align-items: center;
   justify-content: center;
   height: 36px;
   padding: 0 14px;
+  
+  /*design*/
   border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.10);
   background: rgba(0,0,0,0.04);
