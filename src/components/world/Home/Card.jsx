@@ -21,7 +21,7 @@ const Card = () => {
                     <div className="name">BaekJoon</div>
                     <div className="handle"><a href="https://solved.ac/profile/ices17" target='_blank' rel="noopener noreferrer">@ices17</a></div>
                 </div>
-                <div className="badge">G4</div>
+                <div className="badge">G3</div>
             </div>
         </div>
     );
