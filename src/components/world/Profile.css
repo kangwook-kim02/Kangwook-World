@@ -19,8 +19,7 @@
   /*design*/
   background: white;
   border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-  
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .ProfileInfo h2 {
@@ -38,15 +37,17 @@
   margin-bottom: 0;
   margin-top: 24px;
   padding-left: 12px;
-  
+
   /*design*/
   font-size: 26px;
   font-weight: 700;
-  color: #2f7cf6; 
+  color: #2f7cf6;
   border-left: 4px solid #2f7cf6;
 }
 
-.detail, .prizeDetail, .paperDetail {
+.detail,
+.prizeDetail,
+.paperDetail {
   /*layout*/
   margin-top: 8px;
   padding: 10px 14px;
@@ -59,12 +60,11 @@
   border-radius: 10px;
 }
 
-.undergraduate {
+.dnslab {
   /*layout*/
   margin: 0;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 24px;
   display: block;
 
   /*design*/
@@ -76,14 +76,15 @@
   margin-bottom: 0;
 }
 
-.prizeDetail, .paperDetail {
+.prizeDetail,
+.paperDetail {
   margin-bottom: 0;
 }
 
 .ProfileList {
   /*layout*/
-  height: 90%;    
-  overflow-y: auto;   
+  height: 90%;
+  overflow-y: auto;
   padding: 20px;
 
   /*design*/
