@@ -21,8 +21,13 @@ const PacRep = () => {
           <span>2025.12.16~12.19</span>
         </div>
         <div className="projectResults">
-          <a className="btn" href="/paper.pdf" target="_blank" rel="noreferrer">
-            PDF
+          <a
+            className="btn"
+            href="https://dbpia.co.kr/journal/articleDetail?nodeId=NODE12577981"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Paper
           </a>
           <a
             className="btn"
@@ -31,14 +36,6 @@ const PacRep = () => {
             rel="noreferrer"
           >
             GitHub
-          </a>
-          <a
-            className="btn"
-            href="/poster.pdf"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Poster
           </a>
         </div>
       </div>
